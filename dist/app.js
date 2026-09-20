@@ -66,11 +66,7 @@ $(function () {
         <div class="carousel-track" id="card-track">
           ${cardNames
             .map((name, index) => {
-              const fileName =
-                index === 6
-                  ? "verish-7-mosaic.png"
-                  : `verish-${index + 1}.png`;
-
+              const fileName = `verish-${index + 1}.png`;
               return imageButton(fileName, `${index + 1} / 8 · ${name}`);
             })
             .join("")}
