@@ -292,6 +292,56 @@ strong {
   }
 }
 
+/* Sub-project image archive */
+.sub-body {
+  display: grid;
+  grid-template-columns: minmax(280px, 430px) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  max-width: none;
+  padding: 4px 0 28px 38px;
+}
+
+.sub-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.sub-visual {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7f5f6;
+  cursor: zoom-in;
+}
+
+.sub-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .sub-body {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 2px 0 24px 25px;
+  }
+
+  .sub-visual {
+    height: auto;
+    max-height: 520px;
+  }
+
+  .sub-visual img {
+    height: auto;
+    max-height: 520px;
+  }
+}
+
 /* Project role in the overview and a vertical process flow */
 .role-overview {
   margin-top: 30px;

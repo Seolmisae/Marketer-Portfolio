@@ -748,7 +748,7 @@ summary::-webkit-details-marker {
   gap: 20px;
 }
 .sub summary:after {
-  content: "↗";
+  content: "+";
   font-size: 16px;
   color: var(--pink);
 }
