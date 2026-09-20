@@ -36,3 +36,26 @@ strong{font-weight:650;color:var(--ink)}
 .role b,.learning b{display:inline-block;color:var(--pink);margin-bottom:5px}
 @media(max-width:1050px){.toolkit{grid-template-columns:1fr}.about-symbol{margin-top:32px}.approach{grid-template-columns:1fr}.approach article{display:grid;grid-template-columns:44px 1fr;gap:14px}.approach-icon{margin:0}}
 @media(max-width:760px){.about-symbol{width:160px;height:85px;margin-top:25px}.about-symbol span,.about-symbol b{width:48px;height:48px;font-size:20px}.approach{grid-template-columns:1fr}.approach article{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px}.approach-icon{margin:0}.skills-intro{margin-top:20px}.toolkit{grid-template-columns:1fr;gap:10px}.toolkit article,.toolkit article:first-child{padding:20px}.skill-tags span{font-size:12px}.project-lead{font-size:16px!important}}
+
+/* Always-visible project process and role */
+.process-panel{margin-top:44px;padding-top:32px;border-top:1px solid var(--line)}
+.process-heading{display:grid;grid-template-columns:150px 1fr;column-gap:18px;align-items:end;margin-bottom:22px}
+.process-heading>span{grid-row:1/3;align-self:start;color:var(--pink);font-size:11px;letter-spacing:1.4px;font-weight:600;padding-top:7px}
+.process-heading h4{margin:0!important;font-size:20px!important;letter-spacing:-.02em}
+.process-heading p{margin:5px 0 0!important;font-size:14px!important;color:var(--gray)}
+.process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;counter-reset:process}
+.process-step{position:relative;min-width:0;padding:54px 19px 22px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.process-step:before{content:attr(data-step);position:absolute;top:18px;left:19px;color:var(--pink);font-size:12px;font-weight:600;letter-spacing:1px}
+.process-step:after{content:'';position:absolute;top:37px;left:19px;width:24px;height:2px;background:#e7c4d2}
+.process-step h4{display:block;margin:0 0 10px!important;font-size:15px!important;line-height:1.55;color:var(--ink)}
+.process-step p{margin:0!important;font-size:14px!important;line-height:1.75;color:var(--gray)}
+.process-summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.process-summary .role,.process-summary .learning{position:relative;margin:0;padding:24px 24px 24px 62px;border-radius:16px;border:1px solid transparent;font-size:14px;line-height:1.75}
+.process-summary .role{background:#f8eef2;border-color:#efd8e1}
+.process-summary .learning{background:#f7f6f7;border-color:#ece9eb}
+.process-summary .role:before,.process-summary .learning:before{position:absolute;left:20px;top:22px;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;font-size:13px;font-weight:700}
+.process-summary .role:before{content:'R';background:var(--pink);color:#fff}
+.process-summary .learning:before{content:'✓';background:#fff;color:var(--pink);border:1px solid #e1ccd4}
+.process-summary b{display:inline-block;margin-bottom:4px;color:var(--ink)}
+@media(max-width:1050px){.process-grid{grid-template-columns:1fr}.process-step{padding:48px 20px 20px}.process-summary{grid-template-columns:1fr}}
+@media(max-width:760px){.process-panel{margin-top:35px;padding-top:27px}.process-heading{grid-template-columns:1fr;gap:4px}.process-heading>span{grid-row:auto}.process-heading h4{font-size:19px!important}.process-heading p{font-size:13px!important}.process-grid{gap:9px}.process-summary{gap:9px}.process-summary .role,.process-summary .learning{padding:21px 18px 21px 56px}}
