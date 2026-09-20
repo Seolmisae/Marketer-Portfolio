@@ -1,0 +1,38 @@
+/* Content emphasis, illustrated About, and tag-based skills */
+strong{font-weight:650;color:var(--ink)}
+.accent{color:var(--pink);font-weight:600}
+.key-text{font-weight:650;color:var(--ink);background:linear-gradient(transparent 68%,#efd6e1 0);padding:0 .04em}
+.about-symbol{width:190px;height:112px;margin-top:50px;position:relative;display:flex;align-items:center;justify-content:space-between;color:var(--pink)}
+.about-symbol:before{content:'';position:absolute;left:29px;right:29px;top:50%;height:1px;background:var(--line)}
+.about-symbol span,.about-symbol b{width:58px;height:58px;display:grid;place-items:center;border:1px solid #d7a7ba;border-radius:50%;background:#fff;position:relative;z-index:1;font-size:24px;font-weight:400}
+.about-symbol b{background:var(--pink);color:#fff;border-color:var(--pink)}
+.about-symbol i{width:11px;height:11px;background:#e6c5d2;border-radius:50%;position:relative;z-index:1;box-shadow:0 0 0 8px #fff}
+.about-content .big-copy strong{color:var(--pink)}
+.approach{gap:14px}
+.approach article{min-width:0;padding:22px 18px;border:1px solid var(--line);border-radius:18px;background:#fff;transition:transform .25s,border-color .25s,box-shadow .25s}
+.approach article:hover{transform:translateY(-4px);border-color:#dcb8c7;box-shadow:0 14px 30px #4a23330b}
+.approach-icon,.skill-icon,.education-icon{display:grid;place-items:center}
+.approach-icon{width:44px;height:44px;border-radius:14px;background:var(--pale);color:var(--pink);margin-bottom:18px}
+.approach-icon svg,.skill-icon svg,.education-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.approach small,.skill-group-head small{display:block;color:var(--pink);font-size:11px;letter-spacing:1.1px;font-weight:600}
+.approach h3{margin:3px 0 9px}
+.education{display:flex;align-items:center;gap:14px}
+.education-icon{flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:#f7f5f6;color:var(--pink)}
+.education>span:last-child{color:var(--ink);font-size:14px}
+.education small{color:#777;font-size:12px}
+.skills-intro{max-width:330px;margin:28px 0 0;color:var(--gray);font-size:15px}
+.toolkit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.toolkit article,.toolkit article:first-child{display:block;padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.skill-group-head{display:flex;gap:13px;align-items:center;margin-bottom:20px}
+.skill-group-head>div{min-width:0}
+.skill-icon{flex:0 0 43px;width:43px;height:43px;border-radius:14px;color:var(--pink);background:var(--pale)}
+.toolkit h3{margin:2px 0 0;font-size:17px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px}
+.skill-tags span{display:inline-flex;align-items:center;min-height:32px;padding:6px 11px;border-radius:999px;background:#f6f4f5;color:#4f4d52;font-size:12px;line-height:1.25;border:1px solid transparent}
+.toolkit article:nth-child(1) .skill-tags span:first-child,.toolkit article:nth-child(2) .skill-tags span:first-child,.toolkit article:nth-child(3) .skill-tags span:first-child,.toolkit article:nth-child(4) .skill-tags span:first-child{background:var(--pink);color:#fff}
+.project-lead{font-size:17px!important;line-height:1.9}
+.work-content h4{display:flex;align-items:center;gap:9px}
+.section-icon{display:inline-grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--pale);color:var(--pink);font-size:13px;font-weight:700}
+.role b,.learning b{display:inline-block;color:var(--pink);margin-bottom:5px}
+@media(max-width:1050px){.toolkit{grid-template-columns:1fr}.about-symbol{margin-top:32px}.approach{grid-template-columns:1fr}.approach article{display:grid;grid-template-columns:44px 1fr;gap:14px}.approach-icon{margin:0}}
+@media(max-width:760px){.about-symbol{width:160px;height:85px;margin-top:25px}.about-symbol span,.about-symbol b{width:48px;height:48px;font-size:20px}.approach{grid-template-columns:1fr}.approach article{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px}.approach-icon{margin:0}.skills-intro{margin-top:20px}.toolkit{grid-template-columns:1fr;gap:10px}.toolkit article,.toolkit article:first-child{padding:20px}.skill-tags span{font-size:12px}.project-lead{font-size:16px!important}}
