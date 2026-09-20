@@ -65,12 +65,14 @@ $(function () {
       <div class="showcase carousel" role="region" aria-label="베리시 카드뉴스 8장">
         <div class="carousel-track" id="card-track">
           ${cardNames
-            .map((name, index) =>
-              imageButton(
-                `verish-${index + 1}.png`,
-                `${index + 1} / 8 · ${name}`,
-              ),
-            )
+            .map((name, index) => {
+              const fileName =
+                index === 6
+                  ? "verish-7-mosaic.png"
+                  : `verish-${index + 1}.png`;
+
+              return imageButton(fileName, `${index + 1} / 8 · ${name}`);
+            })
             .join("")}
         </div>
         <div class="carousel-controls">
